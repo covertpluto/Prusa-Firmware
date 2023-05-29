@@ -96,26 +96,26 @@
  */
 #define SHEET_PRINT_ZERO_REF_Y -2.f
 
-#define DEFAULT_MAX_FEEDRATE                {200, 200, 12, 120}      // (mm/sec)   max feedrate (M203)
-#define DEFAULT_MAX_FEEDRATE_SILENT         {100, 100, 12, 120}      // (mm/sec)   max feedrate (M203), silent mode
+#define DEFAULT_MAX_FEEDRATE                {500, 500, 20, 120}      // (mm/sec)   max feedrate (M203)
+#define DEFAULT_MAX_FEEDRATE_SILENT         {60, 60, 12, 120}      // (mm/sec)   max feedrate (M203), silent mode
 
-#define DEFAULT_MAX_ACCELERATION            {1000, 1000, 200, 5000}  // (mm/sec^2) max acceleration (M201)
-#define DEFAULT_MAX_ACCELERATION_SILENT     {960, 960, 200, 5000}    // (mm/sec^2) max acceleration (M201), silent mode
+#define DEFAULT_MAX_ACCELERATION            {4000, 4000, 500, 10000}  // (mm/sec^2) max acceleration (M201)
+#define DEFAULT_MAX_ACCELERATION_SILENT     {500, 500, 200, 5000}    // (mm/sec^2) max acceleration (M201), silent mode
 
 
-#define DEFAULT_ACCELERATION          1250   // X, Y, Z and E max acceleration in mm/s^2 for printing moves (M204P)
-#define DEFAULT_RETRACT_ACCELERATION  1250   // X, Y, Z and E max acceleration in mm/s^2 for retracts (M204R)
-#define DEFAULT_TRAVEL_ACCELERATION   1250   // X, Y, Z and E max acceleration in mm/s^2 for travels (M204T)
+#define DEFAULT_ACCELERATION          4000   // X, Y, Z and E max acceleration in mm/s^2 for printing moves (M204P)
+#define DEFAULT_RETRACT_ACCELERATION  4000   // X, Y, Z and E max acceleration in mm/s^2 for retracts (M204R)
+#define DEFAULT_TRAVEL_ACCELERATION   4000   // X, Y, Z and E max acceleration in mm/s^2 for travels (M204T)
 
-#define MANUAL_FEEDRATE {2700, 2700, 1000, 100}   // set the speeds for manual moves (mm/min)
+#define MANUAL_FEEDRATE {2700, 2700, 1500, 100}   // set the speeds for manual moves (mm/min)
 
 //Silent mode limits
 #define SILENT_MAX_ACCEL_XY      960ul  // max acceleration in silent mode in mm/s^2
 #define SILENT_MAX_FEEDRATE_XY   100  // max feedrate in mm/s
 
 //Normal mode limits
-#define NORMAL_MAX_ACCEL_XY     2500ul  // max acceleration in normal mode in mm/s^2
-#define NORMAL_MAX_FEEDRATE_XY   200  // max feedrate in mm/s
+#define NORMAL_MAX_ACCEL_XY     4000ul  // max acceleration in normal mode in mm/s^2
+#define NORMAL_MAX_FEEDRATE_XY   500  // max feedrate in mm/s
 
 //number of bytes from end of the file to start check
 #define END_FILE_SECTION 20000
